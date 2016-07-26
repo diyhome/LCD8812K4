@@ -9,16 +9,19 @@ void main()
 	Ht1621_Init();
 	LCD_init();
 	delayms(800);
-	LCD_disp_string(0,0,"String");
-	LCD_disp_string(0,1,"Love !");
 	Ht1621WrAllData(0,Ht1621Tab,16);
-	for (k=0;k<10;k++)
+	while (1)
 	{
-		for (t=0;t<10;t++)
+		LCD_disp_string(0,0,"String");
+		LCD_disp_string(0,1,"Love !");
+		for (k=0;k<10;k++)
 		{
-			bignum(k,t);
-			delayms(500);
-			Ht1621WrAllData(0,Ht1621Tab,16);
+			for (t=0;t<10;t++)
+			{
+				bignum(k,t);
+				delayms(500);
+				Ht1621WrAllData(0,Ht1621Tab,16);
+			}
 		}
 	}
 }
