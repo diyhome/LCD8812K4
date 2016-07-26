@@ -21,3 +21,6 @@
 [中国电子diy之家](http://www.ndiy.cn/thread-30754-1-1.html"宅男公子")
 [某宝](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.zWdSkD&id=17760386568&_u=p2f9tros8e02)
 PS：数码之家因为我权限不够所以未获得作者授权，侵删
+
+##BUG
+下方1601在复位的时候有很大几率无法初始化导致不能显示
