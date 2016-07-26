@@ -17,7 +17,7 @@ void main()
 		for (t=0;t<10;t++)
 		{
 			bignum(k,t);
-			delayms(500);
+			delayms(800);
 			Ht1621WrAllData(0,Ht1621Tab,16);
 		}
 	}

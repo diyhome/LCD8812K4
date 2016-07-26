@@ -3,8 +3,6 @@
  *
  * 地址：https://item.taobao.com/item.htm?spm=a1z09.2.0.0.zWdSkD&id=17760386568&_u=p2f9tros8e02
  * 	 http://www.ndiy.cn/thread-30754-1-1.html
- * 	 http://bbs.mydigit.cn/read.php?tid=1423130%22%E8%B7%AF%E4%BA%BA%E4%B9%99
- * 	 数码之家因为我没有权限，所以没有得到作者同意，侵删
  * 上半部分为段划部分，主控是HT1621：
  * 右下角小数字用“innumber”函数写入，两个8字地址依次为2,4
  * 大数字段划部分用“bignum”函数写入，
