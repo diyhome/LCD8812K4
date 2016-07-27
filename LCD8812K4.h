@@ -56,7 +56,6 @@ void Ht1621WrOneData(uchar Addr,uchar Data); 		// - - HT1621 在指定地址写�
 void Ht1621WrAllData(uchar Addr,uchar *p,uchar cnt); 	// - - HT1621 连续写入数据函数
 void innumber(uchar addres,uchar num);			// - - 右下角小数字写入，地址为2,4
 void bignum(uchar addres,uchar num);			// - - 大数字写入
-void teshu(uchar dat);
 
 void LCD_init(void); 					// - - 初始化LCD1602函数
 void LCD_write_H4bit_command(uchar dat);
@@ -264,44 +263,6 @@ void bignum(uchar addres,uchar num)
 	      break;
 	      }
 }
-
-void teshu(uchar dat)
-{
-	switch (dat){
-		case ',':
-			Ht1621WrOneData(3,0x08);
-			break;
-		case '%':
-			Ht1621WrOneData(14,0x08);
-			break;
-		case 'F':
-			Ht1621WrOneData(6,0x08);
-			break;
-		case 'S':
-			Ht1621WrOneData(11,0x08);
-			break;
-		case 'M':
-			Ht1621WrOneData(15,0x02);
-			break;
-		case '1':
-			Ht1621WrOneData(8,0x08);
-			break;
-		case '2':
-			Ht1621WrOneData(15,0x01);
-			break;
-		case '+':
-			Ht1621WrOneData(0,0x0e);
-			break;
-		case '3':
-			Ht1621WrOneData(0,0x01);
-			Ht1621WrOneData(1,0x08);
-			break;
-		case '-':
-			Ht1621WrOneData(0,0x04);
-			break;
-	}
-}
-
 
 /********************************lcd******************************/
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
